@@ -1,0 +1,102 @@
+:root {
+  --Soft-blue: hsl(215, 51%, 70%);
+  --Cyan: hsl(178, 100%, 50%);
+  --background: hsl(217, 54%, 11%);
+  --card: hsl(216, 50%, 16%);
+  --line: hsl(215, 32%, 27%);
+  --White: hsl(0, 0%, 100%);
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Outfit", sans-serif;
+  font-style: normal;
+}
+body {
+  background-color: var(--background);
+  display: grid;
+  place-items: center;
+  padding-top: 8rem;
+}
+p {
+  font-size: 18px;
+  color: var(--Soft-blue);
+}
+hr {
+  width: 22rem;
+  margin-left: 5px;
+  border: 0.5px var(--line) solid;
+}
+
+.main-container {
+  background-color: var(--card);
+  width: 27rem;
+  height: 42rem;
+  position: relative;
+  border-radius: 0.75rem;
+}
+
+.nftImage-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+.nft-image {
+  width: 23rem;
+  margin-top: 2rem;
+  border-radius: 1rem;
+}
+.content {
+  margin-left: 1.5rem;
+}
+.Equilibrium {
+  color: var(--White);
+  font-size: larger;
+}
+.description {
+  width: 20rem;
+  font-size: 20px;
+}
+
+.ETH-time {
+  display: flex;
+  justify-content: space-between;
+}
+.ETH-time > p {
+  margin-left: 8rem;
+}
+.ETH-time > h4 {
+  color: var(--Cyan);
+}
+.author-image {
+  width: 2rem;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+.footer-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 4rem;
+}
+.footer-section > p {
+  margin-left: 5px;
+}
+.attribution {
+  font-size: 1rem;
+  margin-top: 5px;
+}
+
+.main-container:hover {
+  cursor: pointer;
+}
+.Equilibrium:hover {
+  color: var(--Cyan);
+  font-size: 1.5rem;
+  transition: 0.5s;
+}
+
+span {
+  color: var(--White);
+}
